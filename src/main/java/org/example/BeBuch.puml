@@ -1,0 +1,24 @@
+@startuml
+
+class BeBuch {
+    - comboBoxFarbe : JComboBox
+    - comboBoxUmschlag : JComboBox
+    - textFieldSeiten : JTextField
+    - checkBoxPlanung : JCheckBox
+    - checkBoxNotiz : JCheckBox
+    + initObjekte(comboBox : JComboBox)
+    + berechnePreis() : double
+}
+
+class KostenRechner {
+    + berechneGesamtpreis(planung : boolean, notiz : boolean) : int
+}
+
+class BeBuchTest {
+    + testInitObjekte() : void
+}
+
+BeBuch --> KostenRechner : "berechnet Preis"
+BeBuchTest ..> BeBuch : "testet"
+@enduml
+

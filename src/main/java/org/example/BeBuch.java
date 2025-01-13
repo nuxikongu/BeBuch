@@ -22,13 +22,13 @@ public class BeBuch extends JFrame {
     public BeBuch() {
         setTitle("BeBuch");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(700, 600);
+        setSize(700, 600 );
         setContentPane(frame);
         setVisible(true);
         setResizable(false);
         initObjekte(comboBoxBestDesign);}
 
-     private void initObjekte (JComboBox < String > comboBoxBestDesign) {
+     public void initObjekte (JComboBox < String > comboBoxBestDesign) {
             //BestDesign
             comboBoxBestDesign.addItem("Name:...,Umschlag: Einfach, Farbe: Grün, Seiten: 50, Gesamtspreis: 9€");
             comboBoxBestDesign.addItem("Name:...,Umschlag: Farbig, Farbe: Blau, Seiten: 30, Gesamtspreis: 9€");
